@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+     <div class="top-bar">
+        <div class="contact-info">
+            <i class="fas fa-envelope" onclick="toggleInfo(this)"></i>
+            <span>mail@example.com</span>
+            <i class="fas fa-phone" onclick="toggleInfo(this)"></i>
+            <span>+91 123 456 789</span>
+            <i class="fas fa-map-marker-alt" onclick="toggleInfo(this)"></i>
+            <span>Suite 884 964 Schultz Points, South Shantell, MN 55832</span>
+        </div>
+        <div class="currency-lang">
+            <select id="currency" onchange="convertCurrency()">
+                <option value="USD">USD</option>
+                <option value="NGN">NGN</option>
+            </select>
+            <select>
+                <option>Eng</option>
+            </select>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://storage.googleapis.com/a1aa/image/fipWtzJMjcRSeELY33HW3psSdreHuLYTfFsI5dRm6UBlh34OB.jpg" alt="Logo">
+            <div class="logo-text">
+                <span>L</span>iving spring<span class="break"></span><span>P</span>roperty
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="home.html" >Home</a>
+            <a href="about.html" >About Us</a>
+            <a href="property.html"  class="active">Properties</a>
+            <a href="agent.html">Find Agent</a>
+            <a href="#">Pricing</a>
+            <a href="blog.html"    class="active">Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-heart"></i>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <i class="fas fa-bars menu-icon" onclick="openNav()"></i>
+        </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+        <span class="close-btn" onclick="closeNav()">&times;</span>
+        <div class="logoo">
+            <img alt="Perfect Property Logo" height="40" src="https://storage.googleapis.com/a1aa/image/D6BMlCoE5taeUi0HyTdNVpZ0JlRal4hFefMaeHJtswgrY34OB.jpg" width="40"/>
+            <span>
+             L
+            </span>
+            <span>
+             iving spring
+            </span>
+            <span>
+             Property
+            </span>
+           </div>
+           <div class="divider">
+           </div>
+        <a href="home.html" >Home</a>
+        <a href="about.html"  >About Us</a>
+        <a href="property.html" >Properties</a>
+        <a href="agent.html">Find Agent</a>
+        <a href="#">Pricing</a>
+        <a href="blog.html"   class="active">Blog</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="containeer">
+        <div class="content">
+            <h1>Properties</h1>
+        </div>
+        <div class="breadcrumb">
+            <a href="home.html">Home</a> / <a href="blog.html">Blogs</a>
+        </div>
+    </div>
+
+
+
+    <div class="containner">
+        <div class="card">
+            <img src="https://placehold.co/600x400" alt="Modern house with large windows and a beautiful garden">
+            <div class="card-content">
+                <h2 class="card-title">Including Animation In Your Design System</h2>
+                <div class="card-meta">
+                    <img src="https://placehold.co/40x40" alt="Portrait of Eva Green">
+                    <span>Eva Green</span>
+                    <time>Mar 15, 2024</time>
+                </div>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
+                <div class="card-button">
+                    <a href="#">See Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://placehold.co/600x400" alt="Modern living room with a large sofa and a coffee table">
+            <div class="card-content">
+                <h2 class="card-title">Taking The Pattern Library To The Next Level</h2>
+                <div class="card-meta">
+                    <img src="https://placehold.co/40x40" alt="Portrait of George Clooney">
+                    <span>George Clooney</span>
+                    <time>Mar 05, 2024</time>
+                </div>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
+                <div class="card-button">
+                    <a href="#">See Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://placehold.co/600x400" alt="Cityscape with modern skyscrapers">
+            <div class="card-content">
+                <h2 class="card-title">How New Font Technology Will Improve The Web</h2>
+                <div class="card-meta">
+                    <img src="https://placehold.co/40x40" alt="Portrait of Simon Baker">
+                    <span>Simon Baker</span>
+                    <time>Feb 25, 2024</time>
+                </div>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
+                <div class="card-button">
+                    <a href="#">See Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <script src="blog.js"></script>
+</body>
+</html>

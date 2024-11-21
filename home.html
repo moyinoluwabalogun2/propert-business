@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>property business</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="contact-info">
+            <i class="fas fa-envelope" onclick="toggleInfo(this)"></i>
+            <span>mail@example.com</span>
+            <i class="fas fa-phone" onclick="toggleInfo(this)"></i>
+            <span>+91 123 456 789</span>
+            <i class="fas fa-map-marker-alt" onclick="toggleInfo(this)"></i>
+            <span>Suite 884 964 Schultz Points, South Shantell, MN 55832</span>
+        </div>
+        <div class="currency-lang">
+            <select id="currency" onchange="convertCurrency()">
+                <option value="USD">USD</option>
+                <option value="NGN">NGN</option>
+            </select>
+            <select>
+                <option>Eng</option>
+            </select>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://storage.googleapis.com/a1aa/image/fipWtzJMjcRSeELY33HW3psSdreHuLYTfFsI5dRm6UBlh34OB.jpg" alt="Logo">
+            <div class="logo-text">
+                <span>L</span>iving spring<span class="break"></span><span>P</span>roperty
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="property.html">Properties</a>
+            <a href="agent.html">Find Agent</a>
+            <a href="#">Pricing</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-heart"></i>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <i class="fas fa-bars menu-icon" onclick="openNav()"></i>
+        </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+        <span class="close-btn" onclick="closeNav()">&times;</span>
+        <div class="logoo">
+            <img alt="Perfect Property Logo" height="40" src="https://storage.googleapis.com/a1aa/image/D6BMlCoE5taeUi0HyTdNVpZ0JlRal4hFefMaeHJtswgrY34OB.jpg" width="40"/>
+            <span>
+             P
+            </span>
+            <span>
+             erfect
+            </span>
+            <span>
+             Property
+            </span>
+           </div>
+           <div class="divider">
+           </div>
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="property.html">Properties</a>
+        <a href="agent.html">Find Agent</a>
+        <a href="#">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="background" id="background" style="background-image: url(https://img.freepik.com/premium-photo/panoramic-view-buildings-against-sky_1048944-3039609.jpg?w=826);">
+        <div class="content" id="content">
+            <h1>Rent A Home</h1>
+            <p>Experience the best in rental properties, curated for you</p>
+        </div>
+        <div class="arrow-left" onclick="prevSlide()">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="arrow-right" onclick="nextSlide()">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    
+
+
+    <script src="home.js"></script>
+</body>
+</html>
+

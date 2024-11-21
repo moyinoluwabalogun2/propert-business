@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+<body>
+    <div class="top-bar">
+        <div class="contact-info">
+            <i class="fas fa-envelope" onclick="toggleInfo(this)"></i>
+            <span>mail@example.com</span>
+            <i class="fas fa-phone" onclick="toggleInfo(this)"></i>
+            <span>+91 123 456 789</span>
+            <i class="fas fa-map-marker-alt" onclick="toggleInfo(this)"></i>
+            <span>Suite 884 964 Schultz Points, South Shantell, MN 55832</span>
+        </div>
+        <div class="currency-lang">
+            <select id="currency" onchange="convertCurrency()">
+                <option value="USD">USD</option>
+                <option value="NGN">NGN</option>
+            </select>
+            <select>
+                <option>Eng</option>
+            </select>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://storage.googleapis.com/a1aa/image/fipWtzJMjcRSeELY33HW3psSdreHuLYTfFsI5dRm6UBlh34OB.jpg" alt="Logo">
+            <div class="logo-text">
+                <span>L</span>iving spring<span class="break"></span><span>P</span>roperty
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="home.html" >Home</a>
+            <a href="about.html" >About Us</a>
+            <a href="property.html" >Properties</a>
+            <a href="agent.html" >Find Agent</a>
+            <a href="#">Pricing</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html"  class="active"> Contact Us</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-heart"></i>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <i class="fas fa-bars menu-icon" onclick="openNav()"></i>
+        </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+        <span class="close-btn" onclick="closeNav()">&times;</span>
+        <div class="logoo">
+            <img alt="Perfect Property Logo" height="40" src="https://storage.googleapis.com/a1aa/image/D6BMlCoE5taeUi0HyTdNVpZ0JlRal4hFefMaeHJtswgrY34OB.jpg" width="40"/>
+            <span>
+             L
+            </span>
+            <span>
+             iving spring
+            </span>
+            <span>
+             Property
+            </span>
+           </div>
+           <div class="divider">
+           </div>
+        <a href="home.html" >Home</a>
+        <a href="about.html"  >About Us</a>
+        <a href="property.html"  >Properties</a>
+        <a href="agent.html">Find Agent</a>
+        <a href="#">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact Us</a>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="breadcrumb">
+                <a href="home.html">Home</a> / <a href="contact.html">Contact us</a>
+            </div>
+        </div>
+
+        <div class="containeeer">
+            <h1>Get In Touch</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed.</p>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Address</h3>
+                    <p>info@example.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone No.</h3>
+                    <p>+123-456-7890</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Office Address</h3>
+                    <p>884 Schultz Points, South Shantell, MN.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="contact-form">
+            <h2>Send Us Message</h2>
+            <form>
+                <div class="form-group">
+                    <div class="half-width">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter Your Name">
+                    </div>
+                    <div class="half-width">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter Your Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="half-width">
+                        <label for="properties">Properties</label>
+                        <select id="properties">
+                            <option>Apartment</option>
+                            <option>self con</option>
+                            <option>Single room
+                            
+                            </option>
+                        </select>
+                    </div>
+                    <div class="half-width">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Write Message"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send Us Message</button>
+                </div>
+            </form>
+        </div>
+
+
+        <footer class="footer">
+            <div class="containeerr">
+                <div class="logoo">
+                    <h1><span>L</span>iving springs <span>P</span>roperty</h1>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="dividerr"></div>
+            <div class="containeerr">
+                <div class="column">
+                    <h3>Popular Searches</h3>
+                    <ul>
+                        <li><a href="#">Flats for rent in Bahrain</a></li>
+                        <li><a href="#">Land for rent in Bahrain</a></li>
+                        <li><a href="#">Land for rent in Bahrain</a></li>
+                        <li><a href="#">Studio Flats for rent in Bahrain</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Popular Areas</h3>
+                    <ul>
+                        <li><a href="#">Flat for rent in Hoora</a></li>
+                        <li><a href="#">Shop for sale in Bahrain</a></li>
+                        <li><a href="#">Property for sale in Bahrain</a></li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:mail@exampl.com">mail@exampl.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+447983788435">+447983788435</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <a href="#">884 Schultz Points, South Shantell, MN.</a></p>
+                </div>
+            </div>
+            <div class="bottom-divider"></div>
+            <div class="copyright">
+                Perfect Property © 2024. All Rights Reserved.
+            </div>
+        </footer>
+    <script src="contact.js"></script>
+    
+    
+        
+</body>
+</html>

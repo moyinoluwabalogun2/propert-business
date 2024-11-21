@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="contact-info">
+            <i class="fas fa-envelope" onclick="toggleInfo(this)"></i>
+            <span>mail@example.com</span>
+            <i class="fas fa-phone" onclick="toggleInfo(this)"></i>
+            <span>+91 123 456 789</span>
+            <i class="fas fa-map-marker-alt" onclick="toggleInfo(this)"></i>
+            <span>Suite 884 964 Schultz Points, South Shantell, MN 55832</span>
+        </div>
+        <div class="currency-lang">
+            <select id="currency" onchange="convertCurrency()">
+                <option value="USD">USD</option>
+                <option value="NGN">NGN</option>
+            </select>
+            <select>
+                <option>Eng</option>
+            </select>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://storage.googleapis.com/a1aa/image/fipWtzJMjcRSeELY33HW3psSdreHuLYTfFsI5dRm6UBlh34OB.jpg" alt="Logo">
+            <div class="logo-text">
+                <span>L</span>iving spring<span class="break"></span><span>P</span>roperty
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="home.html" >Home</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="property.html">Properties</a>
+            <a href="agent.html">Find Agent</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-heart"></i>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <i class="fas fa-bars menu-icon" onclick="openNav()"></i>
+        </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+        <span class="close-btn" onclick="closeNav()">&times;</span>
+        <div class="logoo">
+            <img alt="Perfect Property Logo" height="40" src="https://storage.googleapis.com/a1aa/image/D6BMlCoE5taeUi0HyTdNVpZ0JlRal4hFefMaeHJtswgrY34OB.jpg" width="40"/>
+            <span>L</span>
+            <span>
+             iving spring
+            </span>
+            <span>
+             Property
+            </span>
+           </div>
+           <div class="divider">
+           </div>
+        <a href="home.html" >Home</a>
+        <a href="about.html"  class="active">About Us</a>
+        <a href="property.html">Properties</a>
+        <a href="agent.html">Find Agent</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blog</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1>About Us</h1>
+        </div>
+        <div class="breadcrumb">
+            <a href="home.html">Home</a> / <a href="about.html">About Us</a>
+        </div>
+    </div>
+    <div class="containerr">
+        <div class="text-section">
+            <h1>Who We Are</h1>
+            <div class="underline">
+                <div class="line"></div>
+                <div class="dot"></div>
+            </div>
+            <p>
+                "Welcome to Living  spring Properties a vibrant and inclusive neighborhood where we believe that home is more than just a place to live - it's a haven for connection, growth, and community. Building Connections, One Home at a Time, we strive to create an environment that nurtures meaningful relationships, fosters a sense of belonging, and enhances the quality of life for each and every resident.
+
+            </p>
+            <p>
+                From beautifully designed homes that blend functionality with style, to vibrant community spaces that inspire social connection and activity, every detail is thoughtfully crafted to bring people together. Our community is built on the principles of warmth, inclusivity, and small-town charm, with amenities and programs designed to promote a healthy, active lifestyle.
+
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="https://storage.googleapis.com/a1aa/image/43ykFzapVN6mOB0Fn5DPvLASpgqfRRekVuwNIOk05xBX3hvTA.jpg" alt="Modern house with large windows and a balcony">
+            
+        </div>
+    </div>
+    <div class="containerrr">
+        <div class="title">How Its Works</div>
+        <div class="underline"></div>
+        <div class="description">
+            Discover, Apply, Move-In: it's that easy
+        </div>
+        <div class="stats">
+            <div class="stat">
+                <img alt="Icon of a house representing total properties" src="https://storage.googleapis.com/a1aa/image/iMHlVlU0rX47EBa3iyvDtF5Cmc3f0gGQKefh2ACNHuLbUEfOB.jpg"/>
+                <div class="number" data-target="330">0</div>
+                <div class="label">Total Properties</div>
+            </div>
+            <div class="stat">
+                <img alt="Icon of a person representing happy clients" src="https://storage.googleapis.com/a1aa/image/8ERm8gjasmpVBBlCzj2tPiIwM7RtZJdqeqUlAXAbXQJGFx3JA.jpg"/>
+                <div class="number" data-target="115">0</div>
+                <div class="label">Happy Clients</div>
+            </div>
+            <div class="stat">
+                <img alt="Icon of a box representing successful orders" src="https://storage.googleapis.com/a1aa/image/L5OcXwFjgYrfKyKkXGVxay09fd4d06MFfyyjWzGRK1EdUEfOB.jpg"/>
+                <div class="number" data-target="220">0</div>
+                <div class="label">Successful Orders</div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="containeer">
+            <div class="logoo">
+                <h1><span>L</span>iving springs <span>P</span>roperty</h1>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="dividerr"></div>
+        <div class="containeer">
+            <div class="column">
+                <h3>Popular Searches</h3>
+                <ul>
+                    <li><a href="#">Flats for rent in Bahrain</a></li>
+                    <li><a href="#">Land for rent in Bahrain</a></li>
+                    <li><a href="#">Land for rent in Bahrain</a></li>
+                    <li><a href="#">Studio Flats for rent in Bahrain</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Popular Areas</h3>
+                <ul>
+                    <li><a href="#">Flat for rent in Hoora</a></li>
+                    <li><a href="#">Shop for sale in Bahrain</a></li>
+                    <li><a href="#">Property for sale in Bahrain</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:mail@exampl.com">mail@exampl.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+447983788435">+447983788435</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> <a href="#">884 Schultz Points, South Shantell, MN.</a></p>
+            </div>
+        </div>
+        <div class="bottom-divider"></div>
+        <div class="copyright">
+            Perfect Property © 2024. All Rights Reserved.
+        </div>
+    </footer>
+
+
+    <script src="about.js">
+</script>
+</body>
+</html>

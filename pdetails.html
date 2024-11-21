@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>property detail</title>
+    <link rel="stylesheet" href="pdetails.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="contact-info">
+            <i class="fas fa-envelope" onclick="toggleInfo(this)"></i>
+            <span>mail@example.com</span>
+            <i class="fas fa-phone" onclick="toggleInfo(this)"></i>
+            <span>+91 123 456 789</span>
+            <i class="fas fa-map-marker-alt" onclick="toggleInfo(this)"></i>
+            <span>Suite 884 964 Schultz Points, South Shantell, MN 55832</span>
+        </div>
+        <div class="currency-lang">
+            <select id="currency" onchange="convertCurrency()">
+                <option value="USD">USD</option>
+                <option value="NGN">NGN</option>
+            </select>
+            <select>
+                <option>Eng</option>
+            </select>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://storage.googleapis.com/a1aa/image/fipWtzJMjcRSeELY33HW3psSdreHuLYTfFsI5dRm6UBlh34OB.jpg" alt="Logo">
+            <div class="logo-text">
+                <span>L</span>iving spring<span class="break"></span><span>P</span>roperty
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="home.html" >Home</a>
+            <a href="about.html" >About Us</a>
+            <a href="property.html"  class="active">Properties</a>
+            <a href="agent.html">Find Agent</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-heart"></i>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <i class="fas fa-bars menu-icon" onclick="openNav()"></i>
+        </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+        <span class="close-btn" onclick="closeNav()">&times;</span>
+        <div class="logoo">
+            <img alt="Perfect Property Logo" height="40" src="https://storage.googleapis.com/a1aa/image/D6BMlCoE5taeUi0HyTdNVpZ0JlRal4hFefMaeHJtswgrY34OB.jpg" width="40"/>
+            <span>
+             L
+            </span>
+            <span>
+             iving spring
+            </span>
+            <span>
+             Property
+            </span>
+           </div>
+           <div class="divider">
+           </div>
+        <a href="home.html" >Home</a>
+        <a href="about.html"  >About Us</a>
+        <a href="property.html"  class="active">Properties</a>
+        <a href="agent.html">Find Agent</a>
+        <a href="#">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="containeer">
+        <div class="content">
+            <h1>Properties<br> details</h1>
+        </div>
+        <div class="breadcrumb">
+            <a href="home.html">Home</a> / <a href="property.html">Properties</a>
+        </div>
+    </div>
+    <div class="card">
+        <img alt="Profile picture of the agent" height="50" src="https://storage.googleapis.com/a1aa/image/sJmy6gM1f2UwGib9q0S478dBFlO1QNGtGUuCDkJlLWkeXfjnA.jpg" width="50"/>
+        <div class="info">
+         <h2>
+          Villa on Grand Avenue
+         </h2>
+         <div class="agent">
+          <span>
+           Eva Green
+          </span>
+          <i class="fas fa-star stars">
+          </i>
+          <i class="fas fa-star stars">
+          </i>
+          <i class="fas fa-star stars">
+          </i>
+          <i class="fas fa-star stars">
+          </i>
+          <i class="fas fa-star stars">
+          </i>
+         </div>
+        </div>
+        <div class="actions">
+         <div class="buttons">
+          <button>
+           New
+          </button>
+          <button>
+           For Buy
+          </button>
+          <div class="price">
+           $30,000.00
+          </div>
+         </div>
+         <div class="icons">
+          <i class="far fa-heart">
+          </i>
+          <i class="fas fa-share-alt">
+          </i>
+          <i class="fas fa-print">
+          </i>
+          <i class="fas fa-phone">
+          </i>
+          <i class="fas fa-envelope">
+          </i> 
+          <i class="fab fa-whatsapp">
+          </i>
+          <i class="far fa-bookmark">
+          </i>
+         </div>
+        </div>
+       </div>
+
+      
+
+    <script src="pdetails.js"></script>
+</body>
+</html>

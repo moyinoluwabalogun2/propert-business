@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>property</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="property.css">
+
+</head>
+<body>
+    <div class="top-bar">
+        <div class="contact-info">
+            <i class="fas fa-envelope" onclick="toggleInfo(this)"></i>
+            <span>mail@example.com</span>
+            <i class="fas fa-phone" onclick="toggleInfo(this)"></i>
+            <span>+91 123 456 789</span>
+            <i class="fas fa-map-marker-alt" onclick="toggleInfo(this)"></i>
+            <span>Suite 884 964 Schultz Points, South Shantell, MN 55832</span>
+        </div>
+        <div class="currency-lang">
+            <select id="currency" onchange="convertCurrency()">
+                <option value="USD">USD</option>
+                <option value="NGN">NGN</option>
+            </select>
+            <select>
+                <option>Eng</option>
+            </select>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://storage.googleapis.com/a1aa/image/fipWtzJMjcRSeELY33HW3psSdreHuLYTfFsI5dRm6UBlh34OB.jpg" alt="Logo">
+            <div class="logo-text">
+                <span>L</span>iving spring<span class="break"></span><span>P</span>roperty
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="home.html" >Home</a>
+            <a href="about.html" >About Us</a>
+            <a href="property.html"  class="active">Properties</a>
+            <a href="agent.html">Find Agent</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-heart"></i>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <i class="fas fa-bars menu-icon" onclick="openNav()"></i>
+        </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+        <span class="close-btn" onclick="closeNav()">&times;</span>
+        <div class="logoo">
+            <img alt="Perfect Property Logo" height="40" src="https://storage.googleapis.com/a1aa/image/D6BMlCoE5taeUi0HyTdNVpZ0JlRal4hFefMaeHJtswgrY34OB.jpg" width="40"/>
+            <span>
+             L
+            </span>
+            <span>
+             iving spring
+            </span>
+            <span>
+             Property
+            </span>
+           </div>
+           <div class="divider">
+           </div>
+        <a href="home.html" >Home</a>
+        <a href="about.html"  >About Us</a>
+        <a href="property.html"  class="active">Properties</a>
+        <a href="agent.html">Find Agent</a>
+        <a href="#">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="containeer">
+        <div class="content">
+            <h1>Properties</h1>
+        </div>
+        <div class="breadcrumb">
+            <a href="home.html">Home</a> / <a href="property.html">Properties</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="search-bar">
+         <div class="property-type">
+          <button class="active">
+           Rent a Property
+          </button>
+         </div>
+         <select id="location">
+          <option value="">
+           Choose Location
+          </option>
+          <option value="Ijebu Ode">
+           Ijebu Ode
+          </option>
+          <option value="Lagos">
+           Lagos
+          </option>
+          <option value="Ago">
+           Ago
+          </option>
+          <option value="Iwoye">
+           Iwoye
+          </option>
+          <option value="Oru">
+           Oru
+          </option>
+          <option value="Ijebu Igbo">
+           Ijebu Igbo
+          </option>
+         </select>
+         <select id="type">
+          <option value="">
+           Apartment
+          </option>
+          <option value="Room and Palour">
+           Room and Palour
+          </option>
+          <option value="Duplex">
+           Duplex
+          </option>
+          <option value="Self Con">
+           Self Con
+          </option>
+          <option value="Single Room">
+           Single Room
+          </option>
+         </select>
+         <button onclick="filterProperties()">
+          Search
+         </button>
+         <button onclick="refreshPage()">
+          Refresh
+         </button>
+         <a href="#" style="color: #5e2dbd; text-decoration: none;">
+          Show more search options
+         </a>
+        </div>
+        <div class="search-results">
+         <div class="header">
+          <div>
+           <strong>
+            Search Results :
+           </strong>
+           Showing 1-5 of 20 listing
+          </div>
+          <button class="save-search">
+           Save Search
+          </button>
+          <div>
+           Sort By :
+           <select>
+            <option>
+             Newest
+            </option>
+           </select>
+          </div>
+         </div>
+         <div id="rentProperties">
+          <div class="property-card">
+           <div class="image-container">
+            <img alt="Modern villa with a pool" height="200" src="https://storage.googleapis.com/a1aa/image/LO27pTGUBdJnHtRReU43opDxcO0UzH7JvWypQRH70zxfMkvTA.jpg" width="300"/>
+            <div class="badge">
+             New
+            </div>
+            <div class="icons">
+             <i class="fas fa-heart">
+             </i>
+             <i class="fas fa-bookmark">
+             </i>
+            </div>
+           </div>
+           <div class="details">
+            <h2>
+            Good looking house
+            </h2>
+            <div class="location">
+             Ekoro-olota,Lagos
+            </div>
+            <div class="description">
+                1,shonde close,
+            </div>
+            <div class="features">
+             
+             <div>
+              <i class="fas fa-bath">
+              </i>
+              1 Bath
+             </div>
+             <div>
+              <i class="fas fa-ruler-combined">
+              </i>
+              300 Sq. Ft.
+             </div>
+            </div>
+            <div class="posted-on">
+             Posted On : 04 Mar 2024
+            </div>
+            <div class="category">
+             Category : self con and single room
+            </div>
+           </div>
+           <div class="price">
+            <h3>
+             #255,000
+            </h3>
+            <div class="contact-icons">
+             <a href="tel:+447983788435">
+              <i class="fas fa-phone">
+              </i>
+             </a>
+             <a href="Bolsifarmss@gmail.com">
+              <i class="fas fa-envelope">
+              </i>
+             </a>
+             <a href="https://wa.me/+447983788435">
+                <i class="fab fa-whatsapp">
+                </i></a>
+            </div>
+            <a href="pdetails.html">
+            <button class="see-details">
+             See Details
+            </button></a>
+           </div>
+          </div>
+          <div class="property-card">
+           <div class="image-container">
+            <img alt="Modern apartment with a city view" height="200" src="https://storage.googleapis.com/a1aa/image/TcL8E8mZtBL7Epqnf2ewgjXt5DtPaYk4fvgivO3MCSiCxIfOB.jpg" width="300"/>
+            <div class="badge">
+             New
+            </div>
+            <div class="icons">
+             <i class="fas fa-heart">
+             </i>
+             <i class="fas fa-bookmark">
+             </i>
+            </div>
+           </div>
+           <div class="details">
+            <h2>
+             Apartment in Downtown
+            </h2>
+            <div class="location">
+             Downtown, Lagos.
+            </div>
+            <div class="description">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...
+            </div>
+            <div class="features">
+             <div>
+              <i class="fas fa-bed">
+              </i>
+              2 Beds
+             </div>
+             <div>
+              <i class="fas fa-bath">
+              </i>
+              1 Bath
+             </div>
+             <div>
+              <i class="fas fa-ruler-combined">
+              </i>
+              450 Sq. Ft.
+             </div>
+            </div>
+            <div class="posted-on">
+             Posted On : 01 Feb 2024
+            </div>
+            <div class="category">
+             Category : Apartment
+            </div>
+           </div>
+           <div class="price">
+            <h3>
+             $25,000
+            </h3>
+            <div class="contact-icons">
+             <a href="tel:+1234567890">
+              <i class="fas fa-phone">
+              </i>
+             </a>
+             <a href="mailto:example@example.com">
+              <i class="fas fa-envelope">
+              </i>
+             </a>
+             <a href="https://wa.me/1234567890">
+                <i class="fab fa-whatsapp">
+                </i>
+             </a>
+            </div>
+            <button class="see-details">
+             See Details
+            </button>
+           </div>
+          </div>
+          <div class="property-card">
+           <div class="image-container">
+            <img alt="Cozy duplex with a garden" height="200" src="https://storage.googleapis.com/a1aa/image/oCV3hdwMFoI8H9Av2aoMvTxNNpqrklL0Sjnf9wnm864PMy3JA.jpg" width="300"/>
+            <div class="badge">
+             New
+            </div>
+            <div class="icons">
+             <i class="fas fa-heart">
+             </i>
+             <i class="fas fa-bookmark">
+             </i>
+            </div>
+           </div>
+           <div class="details">
+            <h2>
+             Duplex in Suburb
+            </h2>
+            <div class="location">
+             Suburb, Ijebu Ode.
+            </div>
+            <div class="description">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...
+            </div>
+            <div class="features">
+             <div>
+              <i class="fas fa-bed">
+              </i>
+              4 Beds
+             </div>
+             <div>
+              <i class="fas fa-bath">
+              </i>
+              3 Baths
+             </div>
+             <div>
+              <i class="fas fa-ruler-combined">
+              </i>
+              800 Sq. Ft.
+             </div>
+            </div>
+            <div class="posted-on">
+             Posted On : 15 Jan 2024
+            </div>
+            <div class="category">
+             Category : Duplex
+            </div>
+           </div>
+           <div class="price">
+            <h3>
+             $45,000
+            </h3>
+            <div class="contact-icons">
+             <a href="tel:+1234567890">
+              <i class="fas fa-phone">
+              </i>
+             </a>
+             <a href="mailto:example@example.com">
+              <i class="fas fa-envelope">
+              </i>
+             </a>
+             <a href="https://wa.me/1234567890">
+                <i class="fab fa-whatsapp">
+                </i>
+             </a>
+            </div>
+            <button class="see-details">
+             See Details
+            </button>
+           </div>
+          </div>
+          <div class="property-card">
+           <div class="image-container">
+            <img alt="Single room in a shared apartment" height="200" src="https://storage.googleapis.com/a1aa/image/Hg0xCfxKlJT3fkR9KXuMNF84h6AoScb4xwjreyrrkkqGxIfOB.jpg" width="300"/>
+            <div class="badge">
+             New
+            </div>
+            <div class="icons">
+             <i class="fas fa-heart">
+             </i>
+             <i class="fas fa-bookmark">
+             </i>
+            </div>
+           </div>
+           <div class="details">
+            <h2>
+             Single Room in Shared Apartment
+            </h2>
+            <div class="location">
+             Ago, Ijebu Igbo.
+            </div>
+            <div class="description">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...
+            </div>
+            <div class="features">
+             <div>
+              <i class="fas fa-bed">
+              </i>
+              1 Bed
+             </div>
+             <div>
+              <i class="fas fa-bath">
+              </i>
+              1 Bath
+             </div>
+             <div>
+              <i class="fas fa-ruler-combined">
+              </i>
+              200 Sq. Ft.
+             </div>
+            </div>
+            <div class="posted-on">
+             Posted On : 20 Dec 2023
+            </div>
+            <div class="category">
+             Category : Single Room
+            </div>
+           </div>
+           <div class="price">
+            <h3>
+             $10,000
+            </h3>
+            <div class="contact-icons">
+             <a href="tel:+1234567890">
+              <i class="fas fa-phone">
+              </i>
+             </a>
+             <a href="mailto:example@example.com">
+              <i class="fas fa-envelope">
+              </i>
+             </a>
+             <a href="https://wa.me/1234567890">
+                <i class="fab fa-whatsapp">
+                </i>
+             </a>
+            </div>
+            <button class="see-details">
+             See Details
+            </button>
+           </div>
+          </div>
+         </div>
+        
+        <div id="noResults" class="no-results">
+        <div class="more"><a href="#">see more</a></div>
+            <footer class="footer">
+                <div class="containeerr">
+                    <div class="logoo">
+                        <h1><span>L</span>iving springs <span>P</span>roperty</h1>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="dividerr"></div>
+                <div class="containeerr">
+                    <div class="column">
+                        <h3>Popular Searches</h3>
+                        <ul>
+                            <li><a href="#">Flats for rent in Bahrain</a></li>
+                            <li><a href="#">Land for rent in Bahrain</a></li>
+                            <li><a href="#">Land for rent in Bahrain</a></li>
+                            <li><a href="#">Studio Flats for rent in Bahrain</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Popular Areas</h3>
+                        <ul>
+                            <li><a href="#">Flat for rent in Hoora</a></li>
+                            <li><a href="#">Shop for sale in Bahrain</a></li>
+                            <li><a href="#">Property for sale in Bahrain</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:mail@exampl.com">mail@exampl.com</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+447983788435">+447983788435</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <a href="#">884 Schultz Points, South Shantell, MN.</a></p>
+                    </div>
+                </div>
+                <div class="bottom-divider"></div>
+                <div class="copyright">
+                    Perfect Property © 2024. All Rights Reserved.
+                </div>
+            </footer>
+
+
+
+
+
+    <script src="property.js"></script>
+</body>
+</html>
